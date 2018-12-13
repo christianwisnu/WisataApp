@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="@dimen/actionbar_dimen">
+
+        <ImageView
+            android:id="@+id/ImgBackProfilSejarah"
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_arrow_back_white_24dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImgBackProfilSejarah" >
+
+            <TextView
+                android:layout_margin="@dimen/MarginLayout"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:textColor="@color/White_Snow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="Sejarah Kota Palangka Raya"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="@dimen/MarginLayout"
+        android:id="@+id/scrollView1ProfSejarah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtKataProfilSejarah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="aaa"
+                android:textColor="@color/md_black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

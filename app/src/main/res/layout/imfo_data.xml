@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.project.wisataapp.transaksi.InfoData">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="@dimen/actionbar_dimen">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/actionbar_dimen"
+                android:layout_height="@dimen/actionbar_dimen"
+                android:scaleType="centerInside"
+                android:id="@+id/ImbBackInfoData"
+                android:src="@mipmap/ic_arrow_back_white_24dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/lin3"
+                android:textColor="@color/md_white"
+                android:textSize="18dp"
+                android:text="Artikel Data"/>
+
+            <LinearLayout
+                android:id="@+id/lin3"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_add_circle_outline_black_36dp"
+                    android:id="@+id/imgAddNewImage"/>
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rating2"
+                    android:id="@+id/imgGiveRating"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="@dimen/MarginLayout"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="vertical">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="280dp"
+                    custom:pager_animation="Accordion"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation_span="1100"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:textSize="15dp"
+                android:text="Nama Tempat"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtInfoDataNamaTempat"
+                android:textStyle="bold"
+                android:textColor="@color/md_black"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori: "
+                    android:textSize="15dp"
+                    android:textColor="@color/md_black"/>
+
+                <TextView
+                    android:id="@+id/txtInfoKategori"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Kategori"
+                    android:textColor="@color/md_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Kategori: "
+                    android:textSize="15dp"
+                    android:textColor="@color/md_black"/>
+
+                <TextView
+                    android:id="@+id/txtInfoSubKategori"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Sub Kategori"
+                    android:textColor="@color/md_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:id="@+id/linInfoTglEventAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Event: "
+                        android:textSize="15dp"
+                        android:textColor="@color/md_black"/>
+
+                    <TextView
+                        android:id="@+id/txtInfoTglEvent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Tanggal"
+                        android:textColor="@color/md_black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.0"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/md_black"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open/Start: "/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/md_black"
+                        android:textSize="14dp"
+                        android:id="@+id/txtInfoDataJamBuka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/md_black"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Closed/Finish: "/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/md_black"
+                        android:textSize="14dp"
+                        android:id="@+id/txtInfoDataJamTutup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/md_black"
+                    android:textSize="25dp"
+                    android:text="3.0"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/txtNilaiRating"/>
+
+                <com.willy.ratingbar.ScaleRatingBar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/simpleRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_numStars="5"
+                    app:srb_minimumStars="0"
+                    app:srb_rating="0"
+                    app:srb_starWidth="30dp"
+                    app:srb_starHeight="30dp"
+                    app:srb_starPadding="2dp"
+                    app:srb_stepSize="0.5"
+                    app:srb_isIndicator="false"
+                    app:srb_clickable="false"
+                    app:srb_scrollable="false"
+                    app:srb_clearRatingEnabled="true">
+                </com.willy.ratingbar.ScaleRatingBar>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_person_black_18dp"/>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="7dp"
+                        android:text="Count User Rating"
+                        android:id="@+id/txtUserRating"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:text="Judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/txtInfoDataJudul"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/md_black"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@drawable/border"/>
+
+            <LinearLayout
+                android:id="@+id/linInfoHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:text="Harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/txtInfoDataHarga"
+                    android:gravity="left"
+                    android:textColor="@color/md_black"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="18dp"
+                android:text="Isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/txtInfoDataIsi"
+                android:textColor="@color/md_black"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:text="MAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@color/Blue_LightSkyBlue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <fragment
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:id="@+id/frgInfoDataMaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="18dp"
+                android:text="Alamat: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/md_black"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:text="Alamat: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/txtInfoDataAlamat"
+                android:textColor="@color/md_black"/>
+
+            <Button
+                android:textStyle="bold"
+                android:background="@drawable/slctorangebutton"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="@dimen/MarginButton"
+                android:layout_marginBottom="@dimen/MarginButton"
+                android:id="@+id/btnDetailKomentar"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/HButton"
+                android:text="Ulasan"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

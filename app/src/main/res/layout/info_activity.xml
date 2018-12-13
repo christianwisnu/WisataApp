@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_300">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="@dimen/actionbar_dimen">
+
+        <ImageView
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:scaleType="centerInside"
+            android:id="@+id/img_info_back"
+            android:src="@mipmap/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/txtJudulInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/md_white"
+            android:textSize="18dp"
+            android:text="Info Pariwisata" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_info_namatempat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="textCapWords"
+                    android:id="@+id/eInfoNamatempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Tempat"
+                    android:ems="10" >
+                    <requestFocus />
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_info_judul"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/eInfoJudul"
+                    android:inputType="textCapWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul"
+                    android:visibility="gone"
+                    android:ems="10">
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/input_layout_info_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="textCapWords"
+                    android:id="@+id/eInfoIsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Isi"
+                    android:ems="10"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_info_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:inputType="textCapWords"
+                        android:id="@+id/eInfoKategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kategori"
+                        android:enabled="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtInfoPilihKategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Pilih"
+                    android:textColor="@color/Blue"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_info_sub_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:inputType="textCapWords"
+                        android:id="@+id/eInfoSubKategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Sub Kategori"
+                        android:enabled="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtInfoPilihSubKategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Pilih"
+                    android:textColor="@color/Blue"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linTglEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/input_layout_info_tglevent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/eInfoTglEvent"
+                        android:layout_width="match_parent"
+                        android:enabled="false"
+                        android:hint="Tanggal Event"
+                        android:layout_height="wrap_content"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_action_calendar_day_black"
+                    android:id="@+id/imgInfoTglEvent"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linJamBuka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/input_layout_info_jambuka"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/eInfoJamBuka"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam Buka/Mulai"
+                        android:enabled="false"
+                        android:ems="10"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgInfoJamBuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/ic_query_builder_black_36dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linJamTutup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/input_layout_info_jamtutup"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/eInfoJamTutup"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam Tutup/Selesai"
+                        android:enabled="false"
+                        android:ems="10"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgInfoJamTutup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/ic_query_builder_black_36dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/input_layout_info_harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/eInfoHarga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Harga"
+                        android:ems="10"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearGambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Tambahkan Gambar(Minimum 1)"/>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cardstore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imgInfoGbr1"
+                        android:background="@mipmap/ic_action_picture"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imgInfoGbr2"
+                        android:background="@mipmap/ic_action_picture"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imgInfoGbr3"
+                        android:background="@mipmap/ic_action_picture"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imgInfoGbr4"
+                        android:background="@mipmap/ic_action_picture"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_info_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/eInfoAlamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Alamat"
+                            android:enabled="false"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bInfoAlamatMap"
+                        android:background="@mipmap/ic_action_globe"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ckAlamatManual"
+                    android:text="Ketik Alamat Manual"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@color/md_grey_300"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bInfoSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/MarginButton"
+                        android:background="@drawable/slctorangebutton"
+                        android:text="SAVE"
+                        android:textColor="@color/md_white"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

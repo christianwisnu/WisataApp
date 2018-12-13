@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WisataApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Selamat Datang!</string>
+    <string name="slide_1_desc">Dapatkan apa saja Tujuan Wisata hanya di aplikasi WisataApp!</string>
+
+    <string name="slide_2_title">Info Wisata Banyak</string>
+    <string name="slide_2_desc">Info tempat Wisata ada disini!</string>
+
+    <string name="slide_3_title">Mencari Wisata jadi Lebih Mudah dan Ringkas</string>
+    <string name="slide_3_desc">Cari tempat atau info seputar Pariwiasta yang kamu mau langsung dari genggaman!</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="err_msg_sandi">Password must be filled!</string>
+    <string name="err_msg_id">User ID must be filled!</string>
+    <string name="err_msg_name">User Name must be filled!</string>
+
+    <string name="err_msg_namatempat">Nama Tempat harap diisi!</string>
+    <string name="err_msg_judul">Judul harap diisi!</string>
+    <string name="err_msg_isi">Isi content tidak boleh kosong!</string>
+    <string name="err_msg_alamat">Alamat tidak boleh kosong!</string>
+    <string name="err_msg_kategori">Kategori tidak boleh kosong!</string>
+    <string name="err_msg_sub_kategori">Sub Kategori tidak boleh kosong!</string>
+    <string name="err_msg_jambuka">Jam Buka harus diisi!</string>
+    <string name="err_msg_jamtutup">Jam Tutup harus diisi!</string>
+    <string name="err_msg_harga">Harga harus diisi!</string>
+
+    <string name="ValComment">Isi Komentar Tidak Boleh Kosong</string>
+</resources>

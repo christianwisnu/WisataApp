@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Text
+        android:icon="@mipmap/ic_home_black_36dp"
+        android:id="@+id/home"
+        android:title="Home"/>
+
+    <Group
+        android:id="@+id/group_21"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_21"
+            android:title="Profile" />
+
+        <Text
+            android:id="@+id/about_us"
+            android:title="Visi Misi"
+            app:showIconSpace="true"/>
+
+        <Text
+            android:id="@+id/sejarah"
+            android:title="Sejarah Singkat"
+            app:showIconSpace="true"/>
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_11"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_11"
+            android:title="Wisata" />
+
+        <Text
+            android:icon="@mipmap/ic_flight_takeoff_black_36dp"
+            android:id="@+id/wisata"
+            android:title="Info Tempat Wisata"/>
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_12"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_12"
+            android:title="Penginapan" />
+
+        <Text
+            android:icon="@mipmap/ic_hotel_black_36dp"
+            android:id="@+id/penginapan"
+            android:title="Info Penginapan"/>
+    </Group>
+
+    <Group
+        android:id="@+id/group_13"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_13"
+            android:title="Kuliner" />
+
+        <Text
+            android:icon="@mipmap/ic_restaurant_menu_black_36dp"
+            android:id="@+id/kuliner"
+            android:title="Info Tempat Kuliner"/>
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_14"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_14"
+            android:title="Souvenir" />
+
+        <Text
+            android:icon="@mipmap/ic_card_giftcard_black_36dp"
+            android:id="@+id/suvenir"
+            android:title="Info Tempat Oleh-oleh"/>
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_15"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_15"
+            android:title="Pelayanan Umum" />
+
+        <Text
+            android:icon="@mipmap/ic_local_library_black_36dp"
+            android:id="@+id/pelayanan"
+            android:title="Info Tempat Pelayanan Umum"/>
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_16"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_16"
+            android:title="Agenda" />
+
+        <Text
+            android:icon="@mipmap/ic_insert_invitation_black_36dp"
+            android:id="@+id/agenda"
+            android:title="Info Agenda Kota"/>
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_17"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_17"
+            android:title="Nearby Objek" />
+
+        <Text
+            android:icon="@mipmap/ic_location_on_black_36dp"
+            android:id="@+id/nearby"
+            android:title="Objek Terdekat"/>
+
+    </Group>
+
+    <Text
+        android:id="@+id/tambahinfo"
+        android:icon="@mipmap/ic_note_add_black_36dp"
+        android:title="Tambah Info"/>
+
+    <Separator
+        android:id="@+id/separator_item_11" />
+
+    <Text
+        android:id="@+id/signout"
+        android:icon="@mipmap/ic_exit_to_app_black_36dp"
+        android:title="Keluar"/>
+
+    <Text
+        android:id="@+id/signin"
+        android:icon="@mipmap/ic_account_circle_black_36dp"
+        android:title="Masuk"/>
+
+    <Text
+        android:id="@+id/daftar"
+        android:icon="@mipmap/ic_assignment_ind_black_36dp"
+        android:title="Daftar"/>
+
+    <Separator
+        android:id="@+id/separator_item_21" />
+
+</menu>
